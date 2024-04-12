@@ -9,34 +9,115 @@ Logic Diagram :
 
 Logic Gates:
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/ee17970c-3ac9-4603-881b-88e2825f41a4)
+```
+module logic(a,b,g1,g2,g3,g4,g5,g6,g7);
+input a,b;
+output g1,g2,g3,g4,g5,g6,g7;
+assign g1=a&b;
+assign g2=a|b;
+assign g3=~(a&b);
+assign g4=~(a|b);
+assign g5=a^b;
+assign g6=~a;
+assign g7=~(a^b);
+endmodule
+```
+![logic gate1](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160314881/563db7c9-5186-42ae-9ba8-186e7ab7ed93)
 
 
 Half Adder:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/0e1ecb96-0c25-4556-832b-aeeedfdfe7b9)
+```
+module HalfAdder(a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor (sum,a,b);
+and (carry,a,b);
+endmodule
+```
+![halfadder1](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160314881/62750661-b165-48a3-ba29-f3c8bab4ef10)
 
 
 Full adder:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/9bb3964c-438f-469d-a3de-c1cca6f323fb)
+```
+module fulladder(a,b,c,s,cout);
+input a,b,c;
+output s,cout;
+wire w1,w2,w3;
+xor (w1,a,b);
+xor(s,w1,c);
+and(w2,a,b);
+and(w3,b,c);
+or(cout,w2,w3);
+endmodule
+```
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160314881/5256c730-e700-4100-9316-e821b3fc6270)
 
 
 Half Subtractor:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/731470b7-eb4e-49f8-8bb7-2994052a7184)
-
+```
+module halfsubractor(a,b,D,B);
+input a,b;
+output D,B;
+assign D=a^b;
+assign B=~a&b;
+endmodule
+```
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160314881/63d73734-8347-467d-9fc5-cf522fa753a0)
 
 
 Full Subtractor:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/d66f874b-c1f2-44b3-a035-7149b56430c1)
+```
+module fullsubtractor(a,b,bin,d,out);
+input a,b,bin;
+output d,out;
+assign d=a^b^bin;
+assign out=(~a&b)|((~a^b)&bin);
+endmodule
+```
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160314881/833943d1-3c14-44fb-af08-7f68497664b0)
 
 
 
 8 Bit Ripple Carry Adder
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/7385a408-40a5-4203-8050-b72818622d79)
+```
+module rca(a,b,c,sum,cout) ;
+ input a,b,c;
+ output sum,cout;
+ wire w1,w2,w3;
+ xor g1(w1,a,b);
+ xor g2(sum,w1,c);
+ and g3(w2,a,b);
+ and g4(w3,w1,c);
+ or g5(cout,w3,w2);
+ endmodule
+ module rca1(a,b,cin,sum,cout);
+ input [7:0]a,b;
+ input cin;
+ output [7:0]sum;
+ output cout;
+ wire w1,w2,w3;
+ rca RC1(a[0],b[0],cin,sum[0],w1);
+ rca RC2(a[1],b[1],w1,sum[1],w2);
+ rca RC3(a[2],b[2],w2,sum[2],w3);
+ rca RC4(a[3],b[3],w3,sum[3],w4);
+ rca RC5(a[4],b[4],w4,sum[4],w5);
+ rca RC6(a[5],b[5],w5,sum[5],w6);
+ rca RC7(a[6],b[6],w6,sum[6],w7);
+ rca RC8(a[7],b[7],w7,sum[7],cout);
+ endmodule
 
+```
+![rca in binary](https://github.com/navaneethans/VLSI-LAB-EXP-1/assets/160314881/6d6c984b-48ca-4de8-830a-22a3a782eabc)
 
 
 VERILOG CODE:
