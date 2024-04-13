@@ -1,12 +1,10 @@
-# EX.NO:-1             VLSI-LAB-EXPERIMENTS
-
+JAYASHREE T (212222060091)
+## SIMULATION AND IMPLEMENTATION OF LOGIC GATES, ADDER AND AUBTRACTOR
 ## AIM:
 To simulate and synthesis Logic Gates,Adders and Subtractor using Xilinx ISE.
-
 ## APPARATUS REQUIRED:
 Xilinx 14.7 Spartan6 FPGA
-
-## PROCEDURE: </br>
+## PROCEDURE: 
 STEP:1 Start the Xilinx navigator, Select and Name the New project.</br>
 STEP:2 Select the device family, device, package and speed.</br>
 STEP:3 Select new source in the New Project and select Verilog Module as the Source type. </br>
@@ -21,7 +19,6 @@ STEP:10 Double click on the Implement Design and double click on the Generate Pr
 STEP:11 Load the Bit file into the SPARTAN 6 FPGA STEP:11 On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
 ## LOGIC DIAGRAM :
-
 ### Logic Gates:
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/ee17970c-3ac9-4603-881b-88e2825f41a4)
 
@@ -61,13 +58,6 @@ endmodule
 ![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/d3a3d3f6-7db8-4a7e-b0e6-43f2a22bce25)
 
 ## HALF ADDER:
-
-![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/d616ef0b-9030-40a4-ae7b-33face0b67ee)
-
-### TRUTH TABLE:
-
-![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/bbf76c82-79d3-483d-967f-ad8e42c78724)
-
 ### PROGRAM:
 ```
 module ha(a,b,sum,carry);
@@ -83,13 +73,6 @@ endmodule
 ![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/9ffd8417-dcdf-4cd8-8cdf-ade79c8b2955)
 
 ## FULL ADDER:
-
-![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/18a82411-523d-40f9-b964-0ebe378855b5)
-
-### TRUTH TABLE:
-
-![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/cbe3cf65-f4bf-4a78-a9ed-15d0dd439d3e)
-
 ### PROGRAM:
 ```
 module fa(a,b,c,sum,carry); input a,b,c;
@@ -106,13 +89,6 @@ endmodule
 ![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/4ff72538-f023-4dc0-b6e2-c5ebf43b5ed6)
 
 ## HALF SUBTRACTOR:
-
-![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/431d945d-5ef2-4986-8c72-dc07a3817c98)
-
-### TRUTH TABLE:
-
-![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/af1f77e6-8f36-485c-a7d9-03022c3d300b)
-
 ### PROGRAM:
 ```
 module hs(a,b,difference,borrow);
@@ -128,13 +104,6 @@ endmodule
 ![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/b24b987f-05de-4157-b2c5-ba0de15a8492)
 
 ## FULL SUBTRACTOR:
-
-![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/c926cd72-80ad-4e35-8b2e-7a8f7f0d39ca)
-
-### TRUTH TABLE:
-
-![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/60555927-86bf-4e47-b44e-ac50ef3c826b)
-
 ### PROGRAM:
 ```
 module fullsubtractor(a,b,bin,d,out);
