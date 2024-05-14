@@ -23,23 +23,7 @@ STEP:11 Load the Bit file into the SPARTAN 6 FPGA STEP:11 On the board, by givin
 ### Logic Gates:
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/ee17970c-3ac9-4603-881b-88e2825f41a4)
 
-### Half Adder:
-![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/0e1ecb96-0c25-4556-832b-aeeedfdfe7b9)
-
-### Full adder:
-![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/9bb3964c-438f-469d-a3de-c1cca6f323fb)
-
-### Half Subtractor:
-![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/731470b7-eb4e-49f8-8bb7-2994052a7184)
-
-### Full Subtractor:
-![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/d66f874b-c1f2-44b3-a035-7149b56430c1)
-
-### 8 Bit Ripple Carry Adder
-![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/7385a408-40a5-4203-8050-b72818622d79)
-
 ## VERILOG CODE:
-
 ### Logic gates:
 ```
 Module logicgates(a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate);
@@ -58,6 +42,8 @@ endmodule
 
 ![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/d3a3d3f6-7db8-4a7e-b0e6-43f2a22bce25)
 
+### Half Adder:
+![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/0e1ecb96-0c25-4556-832b-aeeedfdfe7b9)
 ## HALF ADDER:
 ### PROGRAM:
 ```
@@ -73,6 +59,9 @@ endmodule
 
 ![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/9ffd8417-dcdf-4cd8-8cdf-ade79c8b2955)
 
+
+### Full adder:
+![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/9bb3964c-438f-469d-a3de-c1cca6f323fb)
 ## FULL ADDER:
 ### PROGRAM:
 ```
@@ -89,6 +78,8 @@ endmodule
 
 ![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/4ff72538-f023-4dc0-b6e2-c5ebf43b5ed6)
 
+### Half Subtractor:
+![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/731470b7-eb4e-49f8-8bb7-2994052a7184)
 ## HALF SUBTRACTOR:
 ### PROGRAM:
 ```
@@ -104,6 +95,8 @@ endmodule
 
 ![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/b24b987f-05de-4157-b2c5-ba0de15a8492)
 
+### Full Subtractor:
+![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/d66f874b-c1f2-44b3-a035-7149b56430c1)
 ## FULL SUBTRACTOR:
 ### PROGRAM:
 ```
@@ -119,9 +112,8 @@ endmodule
 
 ![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/1c5c8a59-d61a-4460-b2bd-4a87db92c0c4)
 
-## 8 BIT RIPLE CARRY ADDER:
-
-![image](https://github.com/jayashree1707/VLSI-LAB-EXP-1/assets/160314881/3db61863-bb31-4dc1-aee2-244c2608e8bc)
+### 8 Bit Ripple Carry Adder
+![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/7385a408-40a5-4203-8050-b72818622d79)
 
 ### PROGRAM:
 ```
